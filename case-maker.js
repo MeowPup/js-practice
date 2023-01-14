@@ -7,9 +7,11 @@ const camelCase = function(input) {
   for (let i = 0; i < n; i++) {
     // check for spaces
     if (input[i] == " ") {
+      // convert to upper case
       str += input[i+1].toUpperCase();
       i++;
     } else {
+      //if no space, copy character
       str += input[i];
     }
   }
